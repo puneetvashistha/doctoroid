@@ -15,7 +15,7 @@ startBtn.addEventListener("click", () => {
       }, 6800);
 });
 
-let utter = new SpeechSynthesisUtterance("#");
+let utter = new SpeechSynthesisUtterance("");
 synth.speak(utter);
 utter.onend= () => {
     recognition.start();
