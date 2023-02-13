@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Doctroid- AI Doctor</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html">Doctroid</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">About</a></li>
+              <li><a class="nav-link scrollto active" href="#about">AI Virtual Doctor</a></li>
+              <li><a class="nav-link scrollto" href="#services">हिंदी में वार्ता</a></li>
+              <li><a class="nav-link scrollto" href="#services">Prescription</a></li>
+
+              <li><a class="nav-link scrollto" href="https://www.spentarnexe.ml/contact.html">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+
+          <a href="speech1.mp3" class="get-started-btn scrollto">AI Doctor</a>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+   <!-- ======= Hero Section ======= -->
+   <section id="herog" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+            <button id="start-btn" type="button" class="btn btn-success btn-lg btn-block">Tap to Talk</button>
+            <script src="js.js"></script>
+            <div id="speaking-gif" style="display: none;">
+              <img src="talk.gif" alt="Bot speaking">
+              <script src="js.js"></script>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <audio id="myAudio" style="display:none;" src="speech.mp3"></audio>
+
+  <script>
+    var x = document.getElementById("myAudio"); 
+
+    x.addEventListener("ended", function(){
+      x.currentTime = 0;
+      x.play();
+    });
+
+    window.onload = function() {
+      x.play();
+    };
+  </script>
+
+  <div class="alert alert-success" role="alert">
+    Doctoroid is still Learning, kindly have patience and get help from this beta version..
+  </div>
+
