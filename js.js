@@ -12,7 +12,7 @@ startBtn.addEventListener("click", () => {
     window.speechSynthesis.speak(greeting);
     setTimeout(function() {
         recognition.start();
-      }, 5000);
+      }, 6800);
 });
 
 let utter = new SpeechSynthesisUtterance("Hi, how are you?");
