@@ -8,14 +8,14 @@ recognition.maxAlternatives = 2;
 const synth = window.speechSynthesis;
 
 startBtn.addEventListener("click", () => {
-    var greeting = new SpeechSynthesisUtterance("Hello, I am your DOCTOROID an AI Ayurvedic Doctor. Please tell me how may I help you with your problem");
+    var greeting = new SpeechSynthesisUtterance("Hello, I am an AI Ayurvedic Doctor. Please tell me how may I help you with your problem");
     window.speechSynthesis.speak(greeting);
     setTimeout(function() {
         recognition.start();
       }, 6800);
 });
 
-let utter = new SpeechSynthesisUtterance("Hi, how are you?");
+let utter = new SpeechSynthesisUtterance("Hi");
 synth.speak(utter);
 utter.onend= () => {
     recognition.start();
