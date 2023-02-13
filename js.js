@@ -153,7 +153,7 @@ recognition.onresult = (e) => {
     }
 
     
-    else if(transcript.includes('aids')){
+    else if(transcript.includes('aids' || 'hiv')){
         recognition.stop();
         utter.text = "Sure, I am here to help you out with your aids problem. There are various ayurvedic home remedies that you can use while at home for aids like, Ayurveda can help improve the overall health and well-being of people with HIV/AIDS through the use of immune-boosting herbs, dietary changes, and stress-reducing techniques. Hope it helps.. Do you need Any more help??";
         synth.speak(utter);
@@ -202,13 +202,19 @@ recognition.onresult = (e) => {
     }
 
         
-    else if(transcript.includes('anemia')){
+    else if(transcript.includes('anaemia')){
         recognition.stop();
         utter.text = "Sure, I am here to help you out with your anemia problem. Ayurvedic remedies for anemia may include the use of iron-rich herbs like dandelion and alfalfa, along with dietary changes to increase iron intake. Also beetroot and pomegranate helps to cure it.. Hope it helps.. Do you need Any more help??";
         synth.speak(utter);
     }
 
     else if(transcript.includes('depression')){
+        recognition.stop();
+        utter.text = "Sure, I am here to help you out with your Tension problem. Ayurvedic remedies for depression may include the use of herbs like ashwagandha and Shankhapushpi, along with yoga, meditation, and other stress-reducing techniques. Hope it helps.. Do you need Any more help??";
+        synth.speak(utter);
+    }
+    
+      else if(transcript.includes('hypertension')){
         recognition.stop();
         utter.text = "Sure, I am here to help you out with your Tension problem. Ayurvedic remedies for depression may include the use of herbs like ashwagandha and Shankhapushpi, along with yoga, meditation, and other stress-reducing techniques. Hope it helps.. Do you need Any more help??";
         synth.speak(utter);
