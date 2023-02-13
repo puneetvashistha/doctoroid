@@ -64,6 +64,37 @@ recognition.onresult = (e) => {
         utter.text = "Thank You for using Doctoroid, glad to help you. Eat healthy & Take Care. Also you can give us some feedback and rating using our rating page..";
         synth.speak(utter);
     }
+    
+        else if(transcript.includes('piles')){
+        recognition.stop();
+        utter.text = "Sure, I am here to help you out with your piles problem. There are various ayurvedic home remedies that you can use while at home for piles like, First one is to eat fibrous food. Try to consume curd & milk related items, you can also try to do some yoga techniques like Viparit Karni daily in the morning. And also Please be sure to avoid junk foods and beverages. Hope it helps.. Do you need Any more help??";
+        synth.speak(utter);
+    }
+
+    else if(transcript.includes('pain')){
+        recognition.stop();
+        utter.text = "Sure, I am here to help you out with your pain problem. There are various ayurvedic home remedies that you can use while at home for pain like, First one is to put heating pad or towel at the pain area. Taking a hot shower or bath with Epsom salts may also help. And also Please avoid rotten food. Hope it helps.. Do you need Any more help??";
+        synth.speak(utter);
+    }
+
+    else if(transcript.includes('hairfall')){
+        recognition.stop();
+        utter.text = "Sure, I am here to help you out with your hairfall problem. There are various ayurvedic home remedies that you can use while at home for hairfall like, First one is massage the scalp area and also you can use AloeVera. Try to avoid hot water for hair wash. And also try to consume Amla and citrous fruits. Hope it helps.. Do you need Any more help??";
+        synth.speak(utter);
+    }
+
+    else if(transcript.includes('dandruff')){
+        recognition.stop();
+        utter.text = "Sure, I am here to help you out with your dandruff problem. There are various ayurvedic home remedies that you can use while at home for hair dandruff like, First one is massage the scalp area and also you can use AloeVera. Try to avoid hot water for hair wash. And also try to avoid soap with hairs. Hope it helps.. Do you need Any more help??";
+        synth.speak(utter);
+    }
+
+    else if(transcript.includes('constipation')){
+        recognition.stop();
+        utter.text = "Sure, I am here to help you out with your costipation problem. There are various ayurvedic home remedies that you can use while at home for costipation like, First one is intake plenty of water and also eating guava would be better. Raisins would be better to consume in morning . Do a brief Yoga Session and intake dairy products. And also do not try to force lower abdomen. Hope it helps.. Do you need Any more help??";
+        synth.speak(utter);
+    }
+
 
     else{
         recognition.stop();
