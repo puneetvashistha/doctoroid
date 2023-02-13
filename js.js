@@ -95,6 +95,15 @@ recognition.onresult = (e) => {
         synth.speak(utter);
     }
 
+    else if(transcript.includes('thank')){
+        recognition.stop();
+        utter.text = "Thank You for using Doctoroid, I'm always here to help you with your health related problems. Eat healthy & Take Care. Also you can give us some feedback and rating using our rating page..";
+        synth.speak(utter);
+    }
+    
+    
+    
+
 
     else{
         recognition.stop();
