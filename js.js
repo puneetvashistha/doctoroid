@@ -77,7 +77,7 @@ recognition.onresult = (e) => {
         synth.speak(utter);
     }
 
-    else if(transcript.includes('hairfall')){
+    else if(transcript.includes('hair fall')){
         recognition.stop();
         utter.text = "Sure, I am here to help you out with your hairfall problem. There are various ayurvedic home remedies that you can use while at home for hairfall like, First one is massage the scalp area and also you can use AloeVera. Try to avoid hot water for hair wash. And also try to consume Amla and citrous fruits. Hope it helps.. Do you need Any more help??";
         synth.speak(utter);
