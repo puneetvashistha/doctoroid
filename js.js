@@ -238,6 +238,13 @@ recognition.onresult = (e) => {
         synth.speak(utter);
     }
     
+        
+    else if(transcript.includes('punit')){
+        recognition.stop();
+        utter.text = "He's my Tony Stark who has developed me and other websites like Spentarn, Webution, VLSI and still try to make what he thinks.. Please let me know how may I help you with your health problem..";
+        synth.speak(utter);
+    }
+    
     
 
 
