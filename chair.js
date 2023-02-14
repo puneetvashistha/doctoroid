@@ -7,20 +7,14 @@ recognition.interimResults = false;
 recognition.maxAlternatives = 2;
 const synth = window.speechSynthesis;
 
+
+
 startBtn.addEventListener("click", () => {
-    var greeting = new SpeechSynthesisUtterance("Hello, I am your DOCTOROID an AI Ayurvedic Doctor. Here we are going to perform chair pose. In this pose, you mimic sitting in a chair, as you hold a static squat with your feet together. Chair pose is super for developing both upper and lower body strength, particularly in your glute and back muscles. It also helps with balance, especially if you lift your heels. Hope you are ready?? First, Stand with your feet together, bend your knees and sink your hips back so that your thighs are as close to parallel to the floor as possible. Be mindful to keep your knees tracking behind your toes, really reaching your hips toward an invisible chair behind you. Now, Keep your chest lifted and your knees together, raise your arms up, pressing your shoulders down and away from your ears as shown in display... Now wait for one minute and perform it almost 5-6 times.. Let's count.. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60..  Very Nice, we have done it.. Do you want to perform it again??");
-    window.speechSynthesis.speak(greeting);
-    setTimeout(function() {
-        recognition.start();
-      }, 105000);
-});
-
-
-let utter = new SpeechSynthesisUtterance("");
+let utter = new SpeechSynthesisUtterance("Hii I'm your Doctor ho'ws you, say yes..");
 synth.speak(utter);
 utter.onend= () => {
     recognition.start();
-};
+};}
 recognition.onresult = (e) => {
     const transcript = e.results[e.results.length-1][0].transcript.trim();
     if (transcript.includes("thank")) {
