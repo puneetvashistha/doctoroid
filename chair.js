@@ -14,7 +14,7 @@ let utter = new SpeechSynthesisUtterance("Hii I'm your Doctor ho'ws you, say yes
 synth.speak(utter);
 utter.onend= () => {
     recognition.start();
-}});
+};
 recognition.onresult = (e) => {
     const transcript = e.results[e.results.length-1][0].transcript.trim();
     if (transcript.includes("thank")) {
@@ -51,7 +51,7 @@ recognition.onresult = (e) => {
     }
 
 
-}
+}});
 
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
