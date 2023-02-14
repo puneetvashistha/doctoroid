@@ -36,19 +36,21 @@ recognition.onresult = (e) => {
         synth.speak(utter);
     }
  
-    else if(transcript.includes('doctor')){
-        recognition.stop();
-        utter.text = "Doctor is someone who can take care of patient selflessly and you can assume me one out of that. I'm an Ayurvedic doctor who would take care of your health related problems. Please feel free to ask me health related problem of yours?";
-        synth.speak(utter);
-    }
     
-     
+         
     else if(transcript.includes('hello')){
         recognition.stop();
         utter.text = "Hey, How may I help with your health problem today? Please feel free to ask me your health related problems..";
         synth.speak(utter);
     }
     
+    else if(transcript.includes('doctor')){
+        recognition.stop();
+        utter.text = "Doctor is someone who can take care of patient selflessly and you can assume me one out of that. I'm an Ayurvedic doctor who would take care of your health related problems. Please feel free to ask me health related problem of yours?";
+        synth.speak(utter);
+    }
+    
+
     else if(transcript.includes('headache')){
         recognition.stop();
         utter.text = "Sure, I am here to help you out with your headache problem. There are various ayurvedic home remedies that you can use while at home for headache like, First one is to take some rest from your work. Try to consume tea with cloves and cardamom to get relief. And also Please be sure to avoid cold drinks, junk foods and beverages. Hope it helps.. Do you need Any more help??";
