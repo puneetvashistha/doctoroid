@@ -38,7 +38,7 @@ recognition.onresult = (e) => {
  
     
          
-    else if(transcript.includes('hello',0)){
+    else if(transcript.includes('hello')){
         recognition.stop();
         utter.text = "Hey, How may I help with your health problem today? Please feel free to ask me your health related problems..";
         synth.speak(utter);
