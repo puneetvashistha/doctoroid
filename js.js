@@ -8,14 +8,7 @@ recognition.maxAlternatives = 2;
 const synth = window.speechSynthesis;
 
 startBtn.addEventListener("click", () => {
-    var greeting = new SpeechSynthesisUtterance("Hello, I am an AI Ayurvedic Doctor. Please tell me how may I help you with your problem");
-    window.speechSynthesis.speak(greeting);
-    setTimeout(function() {
-        recognition.start();
-      }, 6800);
-});
-
-let utter = new SpeechSynthesisUtterance("");
+let utter = new SpeechSynthesisUtterance("Hello, I am an AI Ayurvedic Doctor. Please tell me how may I help you with your problem??");
 synth.speak(utter);
 utter.onend= () => {
     recognition.start();
@@ -253,7 +246,7 @@ recognition.onresult = (e) => {
         utter.text = "Sorry, Please feel free to tell me your health problem, say that again!!";
         synth.speak(utter);
     }
-}
+}});
 
 
 
