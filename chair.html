@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Doctoroid- AI Doctor</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  
+    <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+      <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html">Doctoroid</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">About</a></li>
+              <li><a class="nav-link scrollto" href="doctor.html">AI Virtual Doctor</a></li>
+              <li><a class="nav-link scrollto active" target="_blank" href="exercise.html">Yoga with Doctoroid</a></li>
+              <li><a class="nav-link scrollto" href="#services">हिंदी में वार्ता</a></li>
+              <li><a class="nav-link scrollto" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScx-es6lG-aFLSV3_7QPqk0QGZMwo7wTPtij7psXXz08DgWRQ/viewform?usp=sf_link">Rate Us</a></li>
+
+              <li><a class="nav-link scrollto" target="_blank" href="https://www.spentarnexe.ml/contact.html">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+
+          <a href="doctor.html" class="get-started-btn scrollto">AI Doctor</a>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+   <!-- ======= Hero Section ======= -->
+   <section id="chair" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+            <div class="col-xl-8">
+              <h1 style= "color: white;">Chair Pose | Utkatasana</h1>
+              <button id="start-btn" type="button" class="btn btn-success btn-lg btn-block">Tap to Start</button>
+              <script src="chair.js"></script>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+      <script>
+
+        document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+      });
+      document.onkeydown = function (e) {
+          if(event.keyCode==123){
+              return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode=="I".charCodeAt(0)){
+              return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode=="C".charCodeAt(0)){
+          return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode=="J".charCodeAt(0)){
+              return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode=="U".charCodeAt(0)){
+              return false;
+          }
+      };
+      </script>
+
+  <script>
+    var x = document.getElementById("myAudio"); 
+
+    x.addEventListener("ended", function(){
+      x.currentTime = 0;
+      x.play();
+    });
+
+    window.onload = function() {
+      x.play();
+    };
+  </script>
+
+  <div class="alert alert-success" role="alert">
+    Doctoroid is still Learning, kindly have patience and get help from this beta version..
+  </div>
