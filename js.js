@@ -14,9 +14,10 @@ const synth = window.speechSynthesis;
 
 startBtn.addEventListener("click", () => {
 
+let utter = new SpeechSynthesisUtterance("Hello, I am an AI Ayurvedic Doctor. Please tell me how may I help you with your problem??");
+
 listeningGif.style.display = 'none';
 prescribingGif.style.display = 'block';
-let utter = new SpeechSynthesisUtterance("Hello, I am an AI Ayurvedic Doctor. Please tell me how may I help you with your problem??");
 synth.speak(utter);
 utter.onend= () => {
     recognition.start();
