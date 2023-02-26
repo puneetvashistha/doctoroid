@@ -5,6 +5,31 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+
+#gifContainer {
+  display: none;
+  position: fixed;
+  top: 45%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 20px;
+}
+
+#listeningGif {
+  display: block;
+}
+
+#prescribingGif {
+  display: none;
+}
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
