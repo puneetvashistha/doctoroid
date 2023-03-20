@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Doctoroid- हिंदी में वार्ता</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  
+    <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="chat.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+      <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="index.html">Doctoroid</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">About</a></li>
+              <li><a class="nav-link scrollto" target="_blank" href="https://chatbot.page/N6PbHU">Appointment with Doctor</a></li>
+              <li><a class="nav-link scrollto" target="_blank" href="exercise.html">Yoga with Doctoroid</a></li>
+              <li><a class="nav-link scrollto active" href="#services">हिंदी में वार्ता</a></li>
+              <li><a class="nav-link scrollto" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScx-es6lG-aFLSV3_7QPqk0QGZMwo7wTPtij7psXXz08DgWRQ/viewform?usp=sf_link">Rate Us</a></li>
+
+              <li><a class="nav-link scrollto" target="_blank" href="https://www.spentarnexe.ml/contact.html">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+
+          <a href="doctor.html" class="get-started-btn scrollto">AI Doctor</a>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+   <!-- ======= Hero Section ======= -->
+   <section id="heroh" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="speak-button" type="button" class="btn btn-success btn-lg btn-block">यहां दबाएं</button>
+
+            <script src="hindijs.js"></script>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="responses.js"></script>
+<script src="chat.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var x = document.getElementById("myAudio"); 
+
+    x.addEventListener("ended", function(){
+      x.currentTime = 0;
+      x.play();
+    });
+
+    window.onload = function() {
+      x.play();
+    };
+  </script>
+
+
